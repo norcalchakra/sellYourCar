@@ -1,10 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #1a1a1d, #475252);
+
+}
+
+.glass {
+background: white;
+min-height: 80vh;
+width: 60%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+background: linear-gradient(to right bottom,
+ rgba(255, 255, 255, 0.4),
+ rgba(255, 255, 255, 0.2));
+border-radius: 25px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
+    
 }
 
 li, a, button {
@@ -70,24 +92,3 @@ button:hover {
     background-color: rgba(0,136,169,0.8);
 }
 
-.banner {
-    align-items: center;
-    padding: 50px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.carBanner {
-    max-width: auto;
-    max-height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100px;
-    opacity: 0.8;
-
-
-}
