@@ -101,22 +101,22 @@ h2 {
     margin-top: 40px;
 }
 
-.box{
+.registration{
     width: 35%;
     padding: 30px;
-    background: rgba(0,0,0,0.2);
     text-align: center;
     border-radius: 25px;
+    background: rgba(0,0,0,0.2);
 }
 
-.box1 h1 {
+.login-area1 h1 {
     color: white;
     text-transform: uppercase;
     font-weight: 700;
 
 }
 
-.box input[type="text"], .box input[type="password"] {
+.login-area input[type="text"], .login-area input[type="password"] {
     border: 0;
     background: none;
     display: block;
@@ -131,13 +131,13 @@ h2 {
     transition: 0.25px;
 }
 
-.box input[type="text"]:focus, .box input[type="password"]:focus {
+.login-area input[type="text"]:focus, .login-area input[type="password"]:focus {
 
     width: 85%;
     border-color: #fae902;
 }
 
-.box input[type="submit"] {
+.login-area input[type="submit"] {
 
     border: 0;
     background: none;
@@ -154,7 +154,7 @@ h2 {
 
 }
 
-.box input[type="submit"]:hover {
+.login-area input[type="submit"]:hover {
     background: #fae902;
     color: #0c0c0c;
 
@@ -168,7 +168,7 @@ h2 {
     flex-wrap: wrap;
     margin-top: 50px;
     flex-direction: row;
-    align-items: center;
+    align-items: center;   
     justify-content: center;
 }
 
@@ -181,4 +181,5 @@ h2 {
     background: rgba(0,0,0,0.2);
     margin-left: 45px;
     margin-right: 45px;
+    margin-top: 25px;
 }
