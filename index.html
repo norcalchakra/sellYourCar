@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
     <title>Sell Your Car</title>
 </head>
 <body>        
@@ -17,20 +18,24 @@
             </ul>
         </nav>
         <img class="logo" src="images/logo.png" alt="car and cash behind it">
-        <a class="cta" href="#"><button>Sell Now</button></a>  
+        <a class="cta" href="#"><button>Sign Up</button></a>  
     </header>
     <div class="banner">
         <h1>Sell Your Car Like a Pro</h1>
     </div>
     <div class="login-area">       
-        <form class="box" action="index.html" method="POST">
-        <h2>LOGIN</h2>
-        <input type="text" name="" placeholder="Enter Username" id="username">
-        <input type="password" name="" placeholder="Enter Password" id="password">
-        <input type="submit" name="" value="Login">
+        <form class="registration" action="index.html" method="POST">
+        <button class="registerLink">REGISTER</button>
+        <button class="loginLink">LOGIN</button>
+        <input type="text" placeholder="Username" id="username">
+        <input type="text" placeholder="Enter Vin #" id="vin">
+        <input type="text" placeholder="Miles" id="miles">
+        <input type="text" placeholder="Enter Your Email" id="email">
+        <input type="text" placeholder="Password" id="userPassword">
+        <input type="text" placeholder="Confirm Password" id="userPasswordConfirm">
+        <input type="submit" id="register" value="Register" onclick=submitinfo()>
         </form>
-    </div>
-    
+    </div>    
     <div class="services">
         <img src="images/moneyDeserve.png" alt="money sign on a gold coin with a green graph moving upwards">
         <img src="images/sellInTime.png" alt="green clock with writing above it">
