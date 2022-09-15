@@ -6,13 +6,14 @@ let userPasswordInput=('Password')
 let userPasswordConfirmInput=('Password')
 
 let newUser = {name: "", vin: "", miles: "", email: "", password: "",};
+// let repeatUser = false;
 
+// console.log(repeatUser);
 
 function submitinfo() {
 
     if (userNameInput != document.getElementById("username").value) {
         console.log('New User');
-        // console.log(document.getElementById("username").value);
         newUser.name = document.getElementById("username").value;
         newUser.vin = document.getElementById("vin").value;
         newUser.miles = document.getElementById("miles").value;
@@ -23,8 +24,7 @@ function submitinfo() {
         
         } else {
 
-        newUser.name = document.getElementById("userPassword").value;
-        newUser.name = document.getElementById("username").value;
+        newUser.password = document.getElementById("userPassword").value;
 
         }
         
@@ -33,12 +33,12 @@ function submitinfo() {
     }   else {
         
             console.log('User Already Exists');
-            
+            let repeatUser = true;
+            console.log(repeatUser);
+            return(repeatUser);
+
         }
 }
 
-
-
-newUser
 
 
